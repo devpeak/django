@@ -73,6 +73,10 @@
     Starting development server at http://127.0.0.1:8000/
     Quit the server with CTRL-BREAK
 </pre>
+<br>
+
+<p>The extends tag allows you to add a <em>parent template</em> for the current template.</p>
+<p>The include tag allows you to include a template inside the current template.</p>
 
 </body>
 </html>
