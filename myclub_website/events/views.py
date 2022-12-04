@@ -3,7 +3,7 @@ import calendar
 from calendar import HTMLCalendar
 from datetime import datetime
 
-def home(request,year,month):
+def home(request,year=2022,month="December"):
 	name = "John"
 	month = month.capitalize() #capitalize the month name
 

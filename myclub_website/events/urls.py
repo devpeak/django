@@ -8,6 +8,6 @@ urlpatterns = [
     #slug: hyphen-  and underscore_
     #UUID: universally unique identifier
 
-
+    path('', views.home, name="home"),
     path('<int:year>/<str:month>/', views.home, name="home"),
 ]
