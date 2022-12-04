@@ -24,6 +24,7 @@
     <li><b>python -m pip list </b>▶ display all of the packages installed in the virtual environment.</li>
     <li><b>deactivate </b>▶ To deactivate a virtual environment.</li>
     <li><b>django-admin startproject myclub_website </b>▶ This will create a mysite directory in your current directory.</li>
+    <li>python manage.py migrate ▶ If your database doesn't exist yet, migrate creates all the necessary tables to match your model definitions.</li>
     </ol></pre>
 
 <h4>what startproject created ?</h4>
@@ -78,5 +79,7 @@
 <p>The extends tag allows you to add a <em>parent template</em> for the current template.</p>
 <p>The include tag allows you to include a template inside the current template.</p>
 
+
+<>
 </body>
 </html>
