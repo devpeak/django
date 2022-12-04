@@ -23,7 +23,7 @@ def home(request,year=datetime.now().year,month=datetime.now().strftime('%B')):
 	time = now.strftime('%I:%M %p') #I - 11, H- 23 #%H:%M:%S
 
 	return render(request, 
-		'home.html', {
+		'events/home.html', {
 		"name": name,
 		"year": year,
 		"month": month,
