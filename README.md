@@ -79,7 +79,15 @@
 <p>The extends tag allows you to add a <em>parent template</em> for the current template.</p>
 <p>The include tag allows you to include a template inside the current template.</p>
 
-
-<>
+<p>Foreign key -> An event can take place at only one venue, that's why we used (1-to-1)</p>
+<pre>
+class Event():
+    venue = models.ForeignKey(Venue, blank=True, null=True)
+</pre>
+<p>ManyToManyField- Many Attendees can join Many Events</p>
+<pre>
+class Event():
+    attendees = models.ManyToManyField(MyClubUser, blank=True)
+</pre>
 </body>
 </html>
