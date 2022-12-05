@@ -18,7 +18,6 @@ class MyClubUser(models.Model):
 	last_name =	models.CharField(max_length=30)
 	email = models.EmailField('User Email')
 
-
 	def __str__(self):
 		return self.first_name + ' ' + self.last_name
 
@@ -30,6 +29,7 @@ class Event(models.Model):
 	venue = models.ForeignKey(Venue, blank=True, null=True)
 	manager = models.CharField(max_length=60)
 	description = models.TextField(blank=True)
+	attendees = models.ManyToManyField(MyClubUser, blank=True)
 
 		def __str__(self):
 		return self.name
