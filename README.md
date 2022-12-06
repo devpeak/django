@@ -89,5 +89,15 @@ class Event():
 class Event():
     attendees = models.ManyToManyField(MyClubUser, blank=True)
 </pre>
+<p>Say if Event is deleted, delete the venue associated with it too.</p>
+<pre>
+class Event(models.Model):
+	venue = models.ForeignKey('Venue',blank=True,null=True,on_delete=models.CASCADE)
+</pre>
+
+<h3>References</h3>
+<ul>
+<li>https://docs.djangoproject.com/en/4.1/topics/migrations/</li>
+</ul>
 </body>
 </html>
